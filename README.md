@@ -26,4 +26,5 @@ sudo docker-compose up
 
 1. Install with `composer`
     + `$ composer install`
+    + `$ yarn install`
     
