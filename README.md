@@ -4,9 +4,10 @@
 
 This social web app is created in the latest Symfony 5 with all great tools.
 
-* Symfony 5
-* React
+* **Symfony 5**
+* **React**
 * Bootstrap
+* Sass Loader 
 * **Docker**
 * composer
 * php-cs-fixer
@@ -19,6 +20,7 @@ This social web app is created in the latest Symfony 5 with all great tools.
 
 ```
 sudo docker-compose up
+yarn encore dev --watch
 ```
 
 **Installation Options**
