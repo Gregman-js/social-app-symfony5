@@ -2,7 +2,7 @@
 
 ## In development
 
-This social web app is created in the latest Symfony 5 with all great tools.
+This social web app is created in the latest Symfony 5 with all useful tools:
 
 * **Symfony 5**
 * **React**
