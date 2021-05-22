@@ -4,7 +4,7 @@ vendor/bin/php-cs-fixer fix --quiet
 git add .
 printf "OK\n"
 
-printf "Searching for errors ... "
+printf "Searching for errors in PHP ... "
 output=$(vendor/bin/phpstan analyse 2> /dev/null)
 status=$?
 
@@ -14,6 +14,19 @@ then
 else
     printf "ERROR\n"
     printf "%s" "$output"
+    exit 1
+fi
+
+printf "Searching for errors in JS ... "
+output=$(node_modules/.bin/eslint assets 2> /dev/null)
+status=$?
+
+if [[ ${status} -eq 0 ]]
+then
+	printf "OK\n"
+else
+    printf "ERROR\n"
+    printf "%s\n" "$output"
     exit 1
 fi
 exit 0

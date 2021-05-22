@@ -10,9 +10,10 @@ This social web app is created in the latest Symfony 5 with all great tools.
 * Sass Loader 
 * **Docker**
 * composer
-* php-cs-fixer
 * PHPUnit
+* php-cs-fixer
 * phpstan
+* eslint
 * webpack
 
 **Usage**
