@@ -1,0 +1,19 @@
+#!/bin/bash
+printf "Fixing Standards ... "
+vendor/bin/php-cs-fixer fix --quiet
+git add .
+printf "OK\n"
+
+printf "Searching for errors ... "
+output=$(vendor/bin/phpstan analyse 2> /dev/null)
+status=$?
+
+if [[ ${status} -eq 0 ]]
+then
+	printf "OK\n"
+else
+    printf "ERROR\n"
+    printf "%s" "$output"
+    exit 1
+fi
+exit 0
