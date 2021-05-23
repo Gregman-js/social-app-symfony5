@@ -1,0 +1,22 @@
+header {
+    .header-container {
+        .search-form {
+            &-wrapper {
+                border-radius: 50px;
+                background-color: whitesmoke;
+
+                &-icon {
+                    color: gray;
+                    margin-left: 10px;
+                }
+
+                input {
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
