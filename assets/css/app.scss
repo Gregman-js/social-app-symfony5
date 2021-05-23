@@ -5,3 +5,7 @@ $primary: #d53c2a;
 $secondary: #334747;
 
 @import "~bootstrap/scss/bootstrap";
+
+#root {
+    height: 100vh;
+}

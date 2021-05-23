@@ -7,7 +7,7 @@ import HeaderIcon from "./HeaderIcon";
 
 function Header() {
     return (
-        <header className="p-3 bg-light text-white">
+        <header className="p-3 bg-light text-white shadow-sm position-relative">
             <div className="container">
                 <div className="header-container d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
