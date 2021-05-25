@@ -1,34 +1,35 @@
 import React from 'react';
 import '../../css/components/Sidebar.scss';
+import {Button} from "@material-ui/core";
 
 function Sidebar() {
     return (
         <div className="sidebar d-flex flex-column flex-shrink-0 p-3 bg-light">
             <ul className="nav nav-pills flex-column mb-auto">
                 <li className="nav-item">
-                    <a href="#" className="nav-link link-dark">
+                    <Button className="nav-link link-dark w-100 justify-content-start">
                         Home
-                    </a>
+                    </Button>
                 </li>
                 <li>
-                    <a href="#" className="nav-link link-dark">
+                    <Button className="nav-link link-dark w-100 justify-content-start">
                         Dashboard
-                    </a>
+                    </Button>
                 </li>
                 <li>
-                    <a href="#" className="nav-link link-dark">
+                    <Button className="nav-link link-dark w-100 justify-content-start">
                         Orders
-                    </a>
+                    </Button>
                 </li>
                 <li>
-                    <a href="#" className="nav-link link-dark">
+                    <Button className="nav-link link-dark w-100 justify-content-start">
                         Products
-                    </a>
+                    </Button>
                 </li>
                 <li>
-                    <a href="#" className="nav-link link-dark">
+                    <Button className="nav-link link-dark w-100 justify-content-start">
                         Customers
-                    </a>
+                    </Button>
                 </li>
             </ul>
         </div>

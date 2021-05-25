@@ -7,14 +7,16 @@ import Content from "./Content";
 
 function Home() {
     return (
-        <div className='d-flex flex-column vh-100'>
-            <Header/>
-            <div className="body d-flex flex-row flex-grow-1">
-                <Sidebar/>
-                <Content/>
-                <Rightbar/>
+        <>
+            <div className='d-flex flex-column vh-100'>
+                <Header/>
+                <div className="body d-flex flex-row flex-grow-1">
+                    <Sidebar/>
+                    <Content/>
+                    <Rightbar/>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 

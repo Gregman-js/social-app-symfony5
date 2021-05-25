@@ -5,4 +5,13 @@ import Dropdown from "bootstrap/js/dist/dropdown";
 import '../css/app.scss';
 import Home from "./components/Home";
 
-ReactDOM.render(<Router><Home/></Router>, document.getElementById('root'));
+function App() {
+    return (
+        <Router>
+            <Home/>
+        </Router>
+    );
+}
+
+
+ReactDOM.render(<App/>, document.getElementById('root'));
